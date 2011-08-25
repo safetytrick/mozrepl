@@ -130,7 +130,7 @@ function onSocketAccepted(serv, transport) {
         outstream.close();
         sessions.remove(session);
     };
-    session.init({});
+    session.init(window);
 
     var pump = Cc['@mozilla.org/network/input-stream-pump;1']
         .createInstance(Ci.nsIInputStreamPump);
